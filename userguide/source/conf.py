@@ -103,6 +103,8 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
+# Adding custom styles to override default styles in ./build/html/_static/css/theme.css 
+html_style = 'css/custom_styles.css'
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
