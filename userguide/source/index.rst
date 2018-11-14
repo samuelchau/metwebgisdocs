@@ -11,6 +11,8 @@ Welcome to MetWebGIS's documentation!
 
    installation
    overview
+   map
+   opmet
 
 
 Indices and tables
