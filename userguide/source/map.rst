@@ -1,6 +1,11 @@
 Map
 ===
 
+The Map module allows visualization of meteorlogical products on a map.
+The most common types of Avaiation products such as GRIB, SIGWX and OPMET can all be displayed using the Map module.
+
+
+
 .. figure:: images/metwebgis_gui_overview.png
    :width: 1000
 
