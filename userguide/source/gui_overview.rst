@@ -15,7 +15,8 @@ where ``[hostname]`` is to be replaced by the hostname or IP address of the WebG
 When first opened with this URL, the browser will present you with Login page of WebGIS shown below.
 
 .. figure:: images/gui_login.png 
-   :width: 600
+
+   The WebGIS login page
 
 To log in, enter the User Name and Password provided to you by the system adminstrator.
 Optionally, select the language supported by the Graphical User interface, and click on the Login button.
@@ -25,10 +26,13 @@ Upon successful login, the application will bring you to the main application di
 
 .. figure:: images/gui_mainpage.png 
 
+   The main page after logging in
+
 The Logout button is located at the upper-right corner. Once you've finished your session with WebGIS, 
 you should log out of the application by clicking on this button. 
 User whose session is still active has to log out before they can log in again from a different client browser.
 The login and logout times of an user is always being recorded by the application in the logs.  
+
 
 Overview of the Main Display Window
 -----------------------------------
@@ -37,7 +41,6 @@ Upon first logging in, the main display window as shown below will be presented.
 By default, it is the Map application module being displayed in the main display window after logging in.
 
 .. figure:: images/gui_mainpage_numbered.png
-   :width: 600
 
    Main Display Window showing the Map module
    
