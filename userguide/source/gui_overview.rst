@@ -37,7 +37,7 @@ Upon first logging in, the main display window as shown below will be presented.
 By default, it is the Map application module being displayed in the main display window after logging in.
 
 .. figure:: images/gui_mainpage_numbered.png
-   :width: 700
+   :width: 600
 
    Main Display Window showing the Map module
    
