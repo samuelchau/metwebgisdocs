@@ -18,4 +18,14 @@ ordinary browser on any client computer connected to the same network.
 
    Graphical User Interface of WebGIS running from the Firefox browser.
 
+The WebGIS software has a variety of applications in the area of hydrology, metetrology and
+environment, where users need to display data from different sources and formats for weather conditions
+and event assessment, analysis, monitoring and tracking. In general, the software supprts the following
+main functions:
+
+* Data Ingest and Processing
+* Databasing and Querying
+* Rendering and Visualization
+* Analysis Tools
+* Web Publishing and Distribution
 
