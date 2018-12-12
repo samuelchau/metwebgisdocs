@@ -15,7 +15,7 @@ where ``[hostname]`` is to be replaced by the hostname or IP address of the WebG
 When first opened with this URL, the browser will present you with Login page of WebGIS shown below.
 
 .. figure:: images/gui_login.png 
-   :width: 590
+   :width: 625
    
    The WebGIS login page
 
@@ -26,7 +26,7 @@ The default is English if no selection is made.
 Upon successful login, the application will bring you to the main application display as shown below.
 
 .. figure:: images/gui_mainpage.png 
-   :width: 615
+   :width: 625
 
    The main page after logging in
 
@@ -43,7 +43,7 @@ Upon first logging in, the main display window as shown below will be presented.
 By default, it is the Map application module being displayed in the main display window after logging in.
 
 .. figure:: images/gui_mainpage_numbered.png
-   :width: 620
+   :width: 630
 
    Main Display Window showing the Map module. See table below for the descriptions of the numbered components.
    
