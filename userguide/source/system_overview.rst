@@ -16,6 +16,6 @@ ordinary browser on any client computer connected to the same network.
 .. figure:: images/web_based_app.png
    :width: 500
 
-   Figure 1: Graphical User Interface of WebGIS running from a client browser.
+   Graphical User Interface of WebGIS running from the Firefox browser.
 
 

@@ -44,28 +44,24 @@ By default, it is the Map application module being displayed in the main display
 
    Main Display Window showing the Map module
    
-+--------+----------------------------------------+------+-------------------------------+
-| no.    | GUI component                          | no.  |  GUI component                |
-+========+========================================+======+===============================+
-| 1      | UTC Time Clock                         | 6    | New Alert Log Panel           |
-+--------+----------------------------------------+------+-------------------------------+
-| 2      | Current user name                      | 7    | Status Bar                    |
-+--------+----------------------------------------+------+-------------------------------+
-| 3      | Logout Button                          | 8    | Application Module Selector   |
-+--------+----------------------------------------+------+-------------------------------+
-| 4      | Area Of Interest(AOI) Management tool  | 9    |  Layer Manager                |
-+--------+----------------------------------------+------+-------------------------------+
-| 5      | Data Verification Alert Log Panel      | 10   |  Main Data Display Panel      |
-+--------+----------------------------------------+------+-------------------------------+
-
 .. table:: Interface Description
-   :widths: 8 60 18 40
-   :align: center
+   :widths: 8 50
+   :align: left
 
-   =========  ===========  ======== ===========
-   **1**      True           **3**
-   **2**      False          **4**
-   =========  ===========  ======== ===========
+   =========  ===========================================================
+     no.      component description
+   =========  ===========================================================
+   **1**      **UTC Time Clock**                                          
+   **2**      **User Name Display**                                      
+   **3**      **Logout Button**                                            
+   **4**      **Area Of Interest Management Tool**
+   **5**      **Data Verification Panel Toggle**
+   **6**      **New Alert Panel Toggle**
+   **7**      **Status Bar**
+   **8**      **Application Module Selector**
+   **9**      **Layer Manager**
+   **10**     **Main Data Display Pane**
+   =========  ===========================================================
 
 
 
