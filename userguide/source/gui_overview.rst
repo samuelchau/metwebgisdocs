@@ -15,7 +15,8 @@ where ``[hostname]`` is to be replaced by the hostname or IP address of the WebG
 When first opened with this URL, the browser will present you with Login page of WebGIS shown below.
 
 .. figure:: images/gui_login.png 
-
+   :width: 570
+   
    The WebGIS login page
 
 To log in, enter the User Name and Password provided to you by the system adminstrator.
@@ -71,12 +72,17 @@ In this case, the default AOI is a world map. For topics related to creating and
 The **Layer Manager** is a component that controls the display when WebGIS is running in the Map module mode.
 For the complete documentation on the Map application module, please go to Chapter 2.
 
-The **Application Module Selector** is a drop-down selector list that contains the different modules that WebGIS supports.
-The current list of modules contain Map, OPMET, Graph, and Profile. Besides the Map module, 
+The **Application Module Selector** is a drop-down selector list that contains a list of the different modules that WebGIS supports.
+The current list of modules are Map, OPMET, Graph, and Profile.  Besides the Map module, 
 the other modules provides data visualization and analysis tools that do not need mapping visualization. 
-The content of the Main Data Display Pane changes accordingly with respect to the currently selected module in the **Application Module Selector**;
-for example, in the Map module, it almost always displays a map background, where as in the OPMET module, the Main Data Display Pane changes to a Text Pane
-used for displaying Alpha-numeric data. For more details on the various WebGIS application modules, please refer to the subsequent Chapters.
+By clicking on the drop-down list and select the desired application module with work with, the content of the Main Data Display Pane changes 
+accordingly with respect to the currently selected module;
+for example, in the Map module, the Main Data Display Pane always displays a map background, where as for the OPMET module, it changes to a Text Pane
+used for displaying Alpha-numeric data as show in the figure below. For more details on the various WebGIS application modules, please refer to the subsequent Chapters.
 
-The UI components 1-7 are common components that provides useful information and functionalities and 
+.. figure:: images/gui_opmet_module1.png
+
+   WebGIS's GUI with the Opmet application module selected. 
+
+The UI components **1-8** are common components that provides useful information and functionalities and 
 appear all the time on the WebGIS GUI regardless of which module is currently selected.
