@@ -9,6 +9,19 @@ The main functionalities provided by the Map application include:
 * Organizing the different mapped GIS data as layers and providing user-friendly interactivity for managing and customizing their display.
 * Providing different methods of rendering(such as isolines and filled-contours) of the data layers and geo-spatial data.
 
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 
 The Basics
 **********
