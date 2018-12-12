@@ -17,7 +17,6 @@ Welcome to MetWebGIS's documentation!
    :caption: Main Application Modules
    :maxdepth: 2
 
-   map
    map_module
    opmet_module
    flight_plan_module

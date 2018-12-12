@@ -1,9 +1,15 @@
 Map Module
 ==========
 
+The Map application module is the foundation of WebGIS as a web-mapping visualization software.
+It allows visualization of various WAFS geo-spatial data to be rendered on a projected map.
+It organizes mapped data as layers and provides management of layers using interactive user-friendly control methods.
+It provides navigation of the mapped data on the map.
 
-Prepare the tutorial demo (optional)
-************************************
+
+
+The Basics - Panning and Zooming
+********************************
 
 Selecting Product Type
 ----------------------

@@ -42,7 +42,7 @@ By default, it is the Map application module being displayed in the main display
 
 .. figure:: images/gui_mainpage_numbered.png
 
-   Main Display Window showing the Map module
+   Main Display Window showing the Map module. See table below for the descriptions of the numbered components.
    
 .. table:: Interface Description
    :widths: 8 50
@@ -63,5 +63,20 @@ By default, it is the Map application module being displayed in the main display
    **10**     **Main Data Display Pane**
    =========  ===========================================================
 
+The **Application Module Selector** indicates the module in which the WebGIS is currently running.
+As seen in the above screen capture, upon first logging in, by default it is always set to be in the Map module mode, as
+it is a key module in WebGIS which allows the visualization of all kinds of geo-spatial data that are presentable on a projected map. 
+In the Map module mode, the center of the user interface, which is Main Data Display Pane, almost always display a map of an Area of Interest(AOI).
+In this case, the default AOI is a world map. For topics related to creating and setting the default AOI, please go to Chapter 2.  
+The **Layer Manager** is a component that controls the display when WebGIS is running in the Map module mode.
+For the complete documentation on the Map application module, please go to Chapter 2.
 
+The **Application Module Selector** is a drop-down selector list that contains the different modules that WebGIS supports.
+The current list of modules contain Map, OPMET, Graph, and Profile. Besides the Map module, 
+the other modules provides data visualization and analysis tools that do not need mapping visualization. 
+The content of the Main Data Display Pane changes accordingly with respect to the currently selected module in the **Application Module Selector**;
+for example, in the Map module, it almost always displays a map background, where as in the OPMET module, the Main Data Display Pane changes to a Text Pane
+used for displaying Alpha-numeric data. For more details on the various WebGIS application modules, please refer to the subsequent Chapters.
 
+The UI components 1-7 are common components that provides useful information and functionalities and 
+appear all the time on the WebGIS GUI regardless of which module is currently selected.
