@@ -21,6 +21,7 @@ The Layer Manager is the component the user interacts with to control what data 
 on the Main Data Display Pane.
 
 .. figure:: images/map_layermanager1.png
+   :width: 300   
 
    Layer Manager with Advanced Query open and Layers List Box pre-loaded with the default layers, DEM and Bounding Box.
 
