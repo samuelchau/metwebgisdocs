@@ -15,7 +15,7 @@ where ``[hostname]`` is to be replaced by the hostname or IP address of the WebG
 When first opened with this URL, the browser will present you with Login page of WebGIS shown below.
 
 .. figure:: images/gui_login.png 
-   :width: 570
+   :width: 590
    
    The WebGIS login page
 
