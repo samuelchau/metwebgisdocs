@@ -1,15 +1,60 @@
 Map Module
 ==========
 
-The Map application module is the foundation of WebGIS as a web-mapping visualization software.
-It allows visualization of various WAFS geo-spatial data to be rendered on a projected map.
-It organizes mapped data as layers and provides management of layers using interactive user-friendly control methods.
-It provides navigation of the mapped data on the map.
+The Map application module is the foundation module of WebGIS as a GIS web-mapping visualization software.
+The main functionalities provided by the Map application include:
+
+* Providing easy navigation over maps of a defined area of interest.
+* Visualizing various geo-spatial data and meteorological products on a projected map.
+* Organizing the different mapped GIS data as layers and providing user-friendly interactivity for managing and customizing their display.
+* Providing different methods of rendering(such as isolines and filled-contours) of the data layers and geo-spatial data.
 
 
+The Basics
+**********
 
-The Basics - Panning and Zooming
-********************************
+Layer Manager
+-------------
+
+The main components of the Map module consists of the **Layer Manager** and the **Main Data Display Pane**.
+The Layer Manager is the component the user interacts with to control what data to display and how to display
+on the Main Data Display Pane.
+
+.. figure:: images/map_layermanager1.png
+
+   Layer Manager with Advanced Query open and Layers List Box pre-loaded with the default layers, DEM and Bounding Box.
+
+
+.. table:: Interface Description
+   :widths: 8 50
+   :align: left
+
+   =========  ===========================================================
+     no.      component description
+   =========  ===========================================================
+   **1**      **Layers List Box**
+   **2**      **Product Type Selector**
+   **3**      **Add Layer Button**
+   **4**      **Apply Display Button**
+   **5**      **AOI Selector & AOI Refresh Button**
+   **6**      **Delete Layer Button**
+   **7**      **Layer Up/Down Button**
+   **8**      **Show All Layers Toggle**
+   =========  ===========================================================
+
+
+Main Data Display Pane
+----------------------
+
+The Main Data Display Pane is the display area on which mapped data are presented.
+Upon first log-in, it is always displays a map of the default Area Of Interest since the Layer Manager is by default pre-loaded 
+with the DEM layer corresponding to this default Area of Interest. To learn how to change the user default Area Of Interest, please see Chapter 3.
+
+Panning and zooming over the Area Of Interest is provided to the user for easy navigation and observation of the map.
+Scrolling the mouse wheel up and down allows zooming-in and out of the map region, while clicking-and-dragging on the map provides panning of the region.
+Alternatively, you can use the Map Navigation Control located on the right side of the map for zooming and panning. Clicking on the + and - is zooming
+in and out respectively and clicking on an arrow key is panning the map in the respective direction by one step.
+
 
 Selecting Product Type
 ----------------------
@@ -17,34 +62,3 @@ Selecting Product Type
 The Map Module allows visualization of meteorlogical products on a map.
 Many of the aviation products such as GRIB, SIGWX and OPMET can all be displayed using the Map module.
 
-
-.. figure:: images/metwebgis_gui_overview.png
-   :width: 1000
-
-   This is the caption of the figure (a simple paragraph).
-
-To deploy a new version of MetWebGIS, you will need the WAR file containing the application.
-The WAR file needs to be deployed in an Tomcat instance.
-To do so, the easiest way is to use the HTML Manager of Tomcat.
-
-.. code-block:: bash
-
-   $ git clone https://github.com/cehbrecht/quick-sphinx-tutorial.git
-
-Adding a new Layer
-------------------
-
-To add a layer to the Layer Manager, simply click on the + button.
-
-Adding a GRIB layer
-~~~~~~~~~~~~~~~~~~~
-
-Adding a SIGWX layer
-~~~~~~~~~~~~~~~~~~~~~
-
-
-GRIB data query
-***************
-
-This section talks about the details of the GRIB2 data query.
-``systemctr restart tomcat8`` you have the ``SIGWX``
