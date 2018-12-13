@@ -7,22 +7,22 @@ Welcome to MetWebGIS's documentation!
 =====================================
 
 .. toctree::
-   :caption: Introduction
+   :caption: WebGIS User Guide
    :maxdepth: 2
 
    system_overview
    gui_overview
 
 .. toctree::
-   :caption: Main Application Modules
    :maxdepth: 2
 
    map_module
    opmet_module
-   flight_plan_module
 
 .. toctree::
-   :caption: System Administration
    :maxdepth: 2
 
-   installation
+   aoi_management   
+   macros
+   animation
+

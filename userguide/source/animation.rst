@@ -1,5 +1,5 @@
-Map Module
-==========
+Animation
+=========
 
 
 Prepare the tutorial demo (optional)
