@@ -7,23 +7,20 @@ The data retrieval is based on a set of query criteria.
 To use the 
 
 .. figure:: images/gui_opmet_module1.png
+   :width: 350
    
    Caption
 
 Query by WMO Header
 *******************
 
+Click on the **WMO Radio Button** to enable query by WMO Header
+
 .. figure:: images/opmet_query_dialog_wmo.png
+   :width: 350
    
    Querying OPMET Data Using the WMO Header
 
-.. figure:: images/opmet_bulletin_display1.png
-   
-   Display of the WMO Bulletins
-
-.. figure:: images/opmet_bulletin_display2.png
-   
-   Display of the WMO Bulletins
 
 Query by ICAO Code
 ******************
@@ -33,6 +30,7 @@ AOI drop-down list
 Query based on WMO header or ICAO ID
 
 .. figure:: images/opmet_query_dialog_icao.png
+   :width: 350
    
    Querying OPMET Data Using the ICAO Code
 
@@ -40,3 +38,12 @@ Query based on WMO header or ICAO ID
 The AOI drop-down list contains a list of all the pre-defined Areas of Interest(AOI's).
 (For defining a custom Area of Interest, please read the secion on Creating an Area Of Interest)
   
+.. figure:: images/opmet_bulletin_display1.png
+   :width: 600
+   
+   Display of the WMO Bulletins
+
+.. figure:: images/opmet_bulletin_display2.png
+   :width: 600
+   
+   Display of the WMO Bulletins

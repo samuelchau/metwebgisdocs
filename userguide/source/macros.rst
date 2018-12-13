@@ -18,6 +18,7 @@ The Macro Manager is the dialog that provides all the tools for user to manage u
 In the Layer Manager, expand the Advanced Query dialog and click on the **Open Macro** button and the Macro Manager will appear as shown below.
 
 .. figure:: images/macro_manager.png
+   :width: 350   
 
    The Macro Manager
 
@@ -54,6 +55,7 @@ Scheduling a Task to Run a Macro
 The Task Scheduling dialog is launched from the Macro Manager by clicking on the **Scheduling Button**. 
 
 .. figure:: images/scheduling_dialog.png
+   :width: 350   
 
-   The Macro Manager
+   The Task Scheduling Dialog
 
