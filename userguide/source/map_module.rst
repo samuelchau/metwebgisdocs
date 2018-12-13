@@ -101,6 +101,7 @@ To add a new GRIB data layer, using the **Product Type Selector**, select GRIB a
 The following GRIB Layer dialog appears.  
 
 .. figure:: images/grib_layer_dialog.png
+   :width: 300
   
    The GRIB Layer Dialog
 
@@ -116,6 +117,7 @@ To add a new SIGWX data layer, using the **Product Type Selector**, select SIGWX
 The following SIGWX Layer dialog appears.  
 
 .. figure:: images/sigwx_layer_dialog.png
+   :width: 300
 
    The SIGWX Layer Dialog
 
