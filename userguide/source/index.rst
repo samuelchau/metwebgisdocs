@@ -24,5 +24,3 @@ Welcome to MetWebGIS's documentation!
 
    aoi_management   
    macros
-   animation
-

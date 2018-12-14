@@ -1,27 +1,13 @@
 Map
 ===
 
-The Map application module is the foundation module of WebGIS as a GIS web-mapping visualization software.
-The main functionalities provided by the Map application include:
+The Map application module is the key module that provides the essential web-mapping visualization capabilities to the WebGIS software.
+The main functionalities provided by the Map module include:
 
-* Providing easy navigation over maps of a defined area of interest.
+* Providing easy-to-use navigation over maps of pre-defined areas of interest.
 * Visualizing various geo-spatial data and meteorological products on a projected map.
 * Organizing the different mapped GIS data as layers and providing user-friendly interactivity for managing and customizing their display.
 * Providing different methods of rendering(such as isolines and filled-contours) of the data layers and geo-spatial data.
-
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
 
 The Basics
 **********
@@ -92,26 +78,49 @@ To refresh the display of all the static layers on the **Main Data Display Pane*
 .. figure:: images/static_layers_dialog.png
    :width: 150
 
-.. Need figure showing the display of static layers
-
-Adding a GRIB Layer
-*******************
+Adding GRIB Layer
+*****************
 
 To add a new GRIB data layer, using the **Product Type Selector**, select GRIB as the Product type and click on the **Add Layer Button**.
-The following GRIB Layer dialog appears.  
+The following GRIB Layer dialog appears. The GRIB Layer dialog allows you to specific precisely the parameter type, run time, forecast time, level of the GRIB data,
+as well as the rendering type of the data layer. 
 
 .. figure:: images/grib_layer_dialog.png
    :width: 300
   
    The GRIB Layer Dialog
 
-   
+Similar to adding a static layer, once the GRIB data details(Source, Model, Run time, Level, Forecast Time, Parameter, Rendering type) are selected from the dialog, 
+click on **Add** to add the layer to Layer Manager. The newly select layer should appear in the **Layers List Box**.
+Then, to render the display of the newly added layer, click on the **Apply Display Button** in Layer Manager.  Note that the GRIB Layer Dialog will stay open, to allow 
+the user to select additional GRIB data layers to be added as overlay.  When done with adding GRIB layer, you can close the dialog by clicking on the **X Button**.
+
+As describe above, in general the process of adding a data layer of any **Product Type** onto the map for display is similiar and always involves three stages:
+
+#. From Layer Manager, select the **Product Type** to be added.
+
+#. Click on **Add Layer** button to launch a dialog for making data selection. (In this case, the GRIB Layer Dialog allows user to select the specifics of the GRIB layer.)
+
+#. Once the layer is added to Layer Manager, click on *Apply Dispaly Button* to refresh the display.
+
+.. figure:: images/map_grib_display1.png
+   :width: 500
+  
+   Map Product with one GRIB Wind Temperature Layer
 
 Different Rendering Types
 -------------------------
+Note that in the GRIB Layer Dialog, there is a selector for Rendering Type. For most parameter types of GRIB, three rendering types are available: 
+*Isolines, IsoSurfaces and Points.*  For the parameter types related to wind data, additional rendering type such as Wind TMP, Wind Barbs, Streamlines are also available.
 
-Adding a SIGWX Layer
-********************
+.. figure:: images/map_grib_display_isosurface.png
+   :width: 500
+  
+   Map Product with two layers of GRIB data: Temperature rendered as Iso-surface, and Wind as Wind Barbs
+
+
+Adding SIGWX Layer
+******************
 
 To add a new SIGWX data layer, using the **Product Type Selector**, select SIGWX as the Product type and click on the **Add Layer Button**.
 The following SIGWX Layer dialog appears.  
@@ -121,33 +130,64 @@ The following SIGWX Layer dialog appears.
 
    The SIGWX Layer Dialog
 
-Adding Opmet Data
-*****************
+From the SIGWX Layer Dialog, select the specifics(Source, Reference Time, Forecast Time, Levels) of the SIGWX data to be added.
+In the lower part of the dialog, there are checkboxes for each SIGWX feature. By default, all of them are checked, indicating
+all SIGWX features will be displayed. To filter out specific feature from the SIGWX data display, 
+click to un-check the box beside the particular feature
 
-Station Models plotting and other OPMET Data can also be displayed as overlay on top of the map data.
-To overlay Station Models and other OPMET data on the map, under the **Product Type** drop-down list, select OPMET
-and the following will appear in the Layer Manager.
+Once the selection of the SIGWX data is done, click on the **Add Layer Button** to add the layer to Layer Manager,
+and the selected SIGWX layer should appear in the **Layers List Box**. 
 
-.. figure:: images/opmet_sigmet_rawdata2.png
+Lastly, click on the **Apply Layer Button** in Layer Manager to refresh the map display with this new layer.
 
-   Querying OPMET Data for map display
+.. figure:: images/map_sigwx_display.png
+   :width: 500
+  
+   Map Product with one SIGWX Layer using the ICAO Area B as Area Of Interest
 
-.. figure:: images/opmet_sigmet_rawdata1.png
 
-   Querying OPMET Data for map display
+Showing PNG of ICAO Charts
+--------------------------
+
+For SIGWX data over the standard ICAO Areas, the PNG images of these charts are also being disseminated by WAFS.
+There is a function available from the SIGWX Layer Dialog that can optionally show the PNG image of these standard ICAO SIGWX Charts.
+To open the PNG image for display, click on the **Show PNG Button** on the SIGWX Layer Dialog.
+Please note that the PNG Chart is only available on the standard ICAO Areas; 
+the user has to set the current AOI to one of the ICAO Areas in order to launch the PNG image for display.
+
+Adding Opmet Plotting
+*********************
+
+OPMET data plotting such as station models can also be displayed as overlay on top of other map data layers.
+To overlay OPMET data plotting on the map, in the **Product Type Selector** , select OPMET
+and the following selection panel will appear in the Layer Manager.  Unlike data layers of other product type, 
+OPMET layer does not appear in the **Layers List Box** as the display of OPMET data plotting is on the top-most layer.
+
+In the data selection panel, there is a list of checkboxes represening the types of OPMET data available for display: 
+METAR, SYNOP, UPPER AIR, SIGMET, AIRMET, PIREP.
+Simply click to check on the types to be added for displayed, then select the **Number of Hours** which is the number of hours to include in the past, 
+and select **Number of Forecast Hours**, and lastly click on the **Show** checkbox to start the data query. This will initiate the query to the database
+for the specific OPMET data within the time period specified and display them on top of the map.
+
+.. figure:: images/opmet_station_selection_panel1.png
+   :width: 250
+
+   OPMET Data Selection Panel under the Advanced Query Dialog
 
 .. figure:: images/opmet_station_models1.png
+   :width: 500
 
-   Station Models displayed on the Map
-
-.. figure:: images/opmet_station_models2.png
-
-   Station Models displayed on the Map
+   Display of Station Models on the Map
 
 .. figure:: images/opmet_sigmet_area1.png
+   :width: 500
 
-   SIGMET Data on the Map
+   Display of SIGMET area on the Map
 
+.. figure:: images/opmet_sigmet_rawdata1.png
+   :width: 500
+
+   Display of the raw bulletin upon clicking on the SIGMET area
 
 
 Quick Query Dialog
@@ -163,6 +203,7 @@ It is intended to provide a easy and quick way to query the most common types of
 while any data queries done using the Quick Query Dialog can also be done already with the Advanced Query Dialog.
 
 .. figure:: images/layer_manager_quick_query_grib.png
+   :width: 350    
 
    The Quick Query Dialog 
 
@@ -173,16 +214,39 @@ while any data queries done using the Quick Query Dialog can also be done alread
    =========  ===========================================================
      no.      component description
    =========  ===========================================================
-   **1**      **UTC Time Clock**
-   **2**      **User Name Display**
-   **3**      **Logout Button**
-   **4**      **Area Of Interest Management Tool**
-   **5**      **Data Verification Panel Toggle**
-   **6**      **New Alert Panel Toggle**
-   **7**      **Status Bar**
-   **8**      **Application Module Selector**
-   **9**      **Layer Manager**
-   **10**     **Main Data Display Pane**
+   **1**      **Area of Interest Selection**
+   **2**      **Products Selection**
+   **3**      **List of Static Layers**
+   **4**      **Macros Selection**
+   **5**      **Display Button**
    =========  ===========================================================
 
+As seen on the **Quick Query Dialog**, there three sections for user input: **Area of Interest**, **Products**, **Macros**
+The **Area of Interest** allows user to specify the combination of **Source/Model** and **AOI** of the data.
+For the sections **Products** and the **Macros**, user can only choose to use either one; hence, when **Products** is open, 
+the **Macros** section will be closed, and vice versa.
+Under **Products**, the user can choose to display either GRIB(WIND TMP) or SIGWX of a specific Level and Forecast Time.
+When **Macros** is open, the user is simply presented with a drop-down list containing all the user-defined macros to select from.
+For more details on how to create a macro, please see the Chapter on Macros and Task Scheduling.
+Once these data selections are made, click on the **Display Button** at the bottom to display the data on the map.
+
+Printing and Exporting the Map Product
+**************************************
+
+In the Map Module, any map product displayed on the Main Data Display Pane can be exported as an Image or PDF for offline use or printing.
+
+.. figure:: images/layer_manager_print_panel.png
+   :width: 300
+
+   The Print Panel in Layer Manager
+
+To export the display as an Image or PDF, click on the **Print Button** located near the bottom of the **Advanced Query Dialog** in Layer Manager,
+and the **Print Panel** as shown in the figure appears.
+On the Print Panel, select in **Output** the format as Image or PDF.
+Then under **Format**, **Orientation**, **Size**, **Unit**, select the paper size, orientation and pixel size, units of the output.
+Optionally, you can also provide a title and text description on the output file. To do that, click to check **Show description** and enter
+your information in the Text field **Title** and the text form below.
+Once done, click on the **Print Button** to generate the exportable file. The exportable file will be presented on a separate dialog from which
+you can then choose to save the file locally or send it to the printer.
+To exit from the **Print Panel**, click on the **Manager Button** to go back to the Layer Manager List Box.
 
